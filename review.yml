@@ -1,0 +1,90 @@
+aid: boardeffect
+name: BoardEffect
+review:
+  question: Does BoardEffect expose a documented public WebSocket API?
+  answer: false
+  date: '2026-07-05'
+  reviewer: API Evangelist
+  asyncapiSpecCreated: false
+  asyncapiScopeNote: |
+    No AsyncAPI document was authored. BoardEffect does not publish any documented
+    public API surface at all - no REST, no WebSocket, and no Server-Sent Events -
+    so there is no transport to model. BoardEffect's "APIs" are customer/partner
+    integrations provisioned per tenant through the Diligent One Integration Panel
+    (SSO plus documented web services), and the separate Diligent Developer Portal
+    covers the Diligent One GRC platform (Entities, Workflow) rather than
+    BoardEffect. There is nothing publicly documented to describe with AsyncAPI.
+findings:
+  summary: |
+    BoardEffect does not publish a documented public WebSocket API - and, more
+    broadly, does not publish any self-serve public developer API. BoardEffect is a
+    board management (board portal) SaaS owned by Diligent and delivered inside the
+    Diligent One Platform. Its integration story is customer-facing: the Diligent
+    One / BoardEffect Integration Panel lets administrators enable Single Sign-On
+    and connect enterprise systems (HRIS, ERP, CRM, and 100+ third-party data
+    providers) through "flexible, documented web services and APIs" that are
+    provisioned per tenant rather than published openly. Diligent operates a
+    separate Developer Portal at developer.diligent.com, but the APIs documented
+    there (for example the Entities Reports API and the Workflow API) target the
+    Diligent One GRC platform, not BoardEffect's meetings, documents, members, or
+    committees data. No public API reference, base URL, authentication guide, or
+    OpenAPI/AsyncAPI definition exists for BoardEffect itself, and therefore no
+    realtime, bidirectional, or streaming WebSocket (ws:// or wss://) endpoint is
+    documented as of the review date.
+  ownership: |
+    BoardEffect is owned by Diligent (a Diligent brand) and is positioned as part of
+    the Diligent One Platform. Board management is one of several Diligent product
+    lines; the flagship Diligent board portal is Diligent Boards, while BoardEffect
+    is the offering purpose-built for nonprofit, healthcare, higher-education, and
+    credit-union boards.
+  publicApi: |
+    None. BoardEffect has no public, self-serve developer API, no published API
+    reference, and no machine-readable API definition. Programmatic access is
+    limited to customer/partner integrations arranged through Diligent (Integration
+    Panel, SSO, and per-tenant web services). Pricing is contact-sales only (annual
+    subscription tiered by number of users); the only public call to action is
+    "Request a Demo."
+  transports:
+    - protocol: REST
+      scheme: https
+      documented: false
+      note: No public REST API reference or base URL is published for BoardEffect. Any web-service integration is provisioned per customer through the Diligent One Integration Panel.
+    - protocol: WebSocket
+      scheme: wss
+      documented: false
+      note: No WebSocket endpoint is documented anywhere for BoardEffect as of the review date.
+    - protocol: SSE
+      scheme: https
+      documented: false
+      note: No Server-Sent Events transport is documented for BoardEffect.
+  endpointsModeled: none
+  endpointsConfirmedRest: []
+sources:
+  - url: https://www.boardeffect.com/
+    type: Website
+    note: Product marketing site; only call to action is "Request a Demo." No developer or API section.
+  - url: https://www.boardeffect.com/how-it-works/
+    type: Website
+    note: Board portal feature overview (meetings, documents, workrooms). No API mentioned.
+  - url: https://www.diligent.com/products/boardeffect
+    type: Website
+    note: Diligent product page confirming BoardEffect is a Diligent brand within the Diligent One Platform.
+  - url: https://help.diligentoneplatform.com/helpdocs/d1p/en-us/Content/boardeffect/board_management_with_boardeffect.htm
+    type: Documentation
+    note: BoardEffect help overview - meetings, documents, workrooms, surveys/voting, minutes. References "seamless integrations" and SSO via the Integration Panel, no public API docs.
+  - url: https://developer.diligent.com/
+    type: Documentation
+    note: Diligent Developer Portal. Documents Diligent One GRC APIs (Entities Reports API, Workflow API), not BoardEffect board-management data. Access is tenant/customer scoped.
+  - url: https://www.boardeffect.com/pricing/
+    type: Plans
+    note: Pricing is contact-sales only - annual subscription tiered by users; no published rates or free tier.
+actions:
+  asyncapiPath: null
+  apisYmlUpdated: true
+  reason: |
+    BoardEffect publishes no public API surface of any protocol, so there is no
+    WebSocket (or REST/SSE) endpoint to model and no AsyncAPI document was created.
+    The apis.yml is maintained as an honest company stub: it records BoardEffect,
+    its Diligent ownership, and real common properties (LinkedIn, websites,
+    documentation, and the contact-sales pricing page) with no fabricated API
+    entries, OpenAPI, plans, rate-limit, or FinOps artifacts.

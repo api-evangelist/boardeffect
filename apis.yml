@@ -1,0 +1,42 @@
+aid: boardeffect
+url: https://raw.githubusercontent.com/api-evangelist/boardeffect/refs/heads/main/apis.yml
+name: BoardEffect
+kind: company
+description: BoardEffect is a board management (board portal) platform for meetings,
+  agendas, board books, document libraries, committees, workrooms, surveys, and
+  voting, purpose-built for mission-driven organizations such as nonprofits,
+  healthcare systems, higher education institutions, foundations, and credit unions.
+  BoardEffect is owned by Diligent and is delivered as part of the Diligent One
+  Platform. It does not publish a self-serve public developer API - integrations are
+  handled through a customer-facing Integration Panel (SSO plus documented web
+  services) provisioned per tenant, and the separate Diligent Developer Portal
+  (developer.diligent.com) exposes APIs for the Diligent One GRC platform rather than
+  for BoardEffect's board-management data. Pricing is contact-sales only (annual
+  subscription, tiered by users).
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Board Management
+- Board Portal
+- Governance
+- Meetings
+- Nonprofit
+- Diligent
+created: '2026-07-05'
+modified: '2026-07-05'
+specificationVersion: '0.19'
+common:
+- type: LinkedIn
+  url: https://www.linkedin.com/company/boardeffect
+- type: Website
+  url: https://www.boardeffect.com
+- type: Website
+  url: https://www.diligent.com/products/boardeffect
+- type: Documentation
+  url: https://help.diligentoneplatform.com/helpdocs/d1p/en-us/Content/boardeffect/board_management_with_boardeffect.htm
+- type: Documentation
+  url: https://developer.diligent.com/
+- type: Plans
+  url: https://www.boardeffect.com/pricing/
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
