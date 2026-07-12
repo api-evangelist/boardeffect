@@ -25,6 +25,10 @@ created: '2026-07-05'
 modified: '2026-07-05'
 specificationVersion: '0.19'
 common:
+- type: TrustCenter
+  url: security/boardeffect-trust-center.yml
+- type: DomainSecurity
+  url: security/boardeffect-domain-security.yml
 - type: LinkedIn
   url: https://www.linkedin.com/company/boardeffect
 - type: Website
