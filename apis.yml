@@ -34,7 +34,7 @@ tags:
 - Diligent
 created: '2026-07-05'
 modified: '2026-07-05'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 common:
 - type: TrustCenter
   url: security/boardeffect-trust-center.yml
