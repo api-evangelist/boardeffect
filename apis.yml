@@ -13,6 +13,17 @@ description: BoardEffect is a board management (board portal) platform for meeti
   (developer.diligent.com) exposes APIs for the Diligent One GRC platform rather than
   for BoardEffect's board-management data. Pricing is contact-sales only (annual
   subscription, tiered by users).
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
