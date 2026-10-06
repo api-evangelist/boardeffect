@@ -51,9 +51,11 @@ tags_raw:
 - Nonprofit
 - Diligent
 created: '2026-07-05'
-modified: '2026-07-05'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 common:
+- url: https://www.boardeffect.com/blog/
+  type: Blog
 - type: TrustCenter
   url: security/boardeffect-trust-center.yml
 - type: DomainSecurity
