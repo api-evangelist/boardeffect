@@ -38,7 +38,6 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/boardeffect.png
 tags:
 - Board Management
-- Board Portal
 - Governance
 - Meetings
 - Non-Profit
