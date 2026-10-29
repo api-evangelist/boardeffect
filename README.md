@@ -1,4 +1,4 @@
-# BoardEffect (boardeffect)
+# BoardEffect
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,58 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-BoardEffect is a board management (board portal) platform for meetings, agendas, board books, document libraries, committees, workrooms, surveys, and voting, purpose-built for mission-driven organizations such as nonprofits, healthcare systems, higher education institutions, foundations, and credit unions. BoardEffect is **owned by Diligent** and is delivered as part of the **Diligent One Platform**.
+BoardEffect is a board management (board portal) platform for meetings, agendas, board books, document libraries, committees, workrooms, surveys, and voting, purpose-built for mission-driven organizations such as nonprofits, healthcare systems, higher education institutions, foundations, and credit unions. BoardEffect is owned by Diligent and is delivered as part of the Diligent One Platform. It does not publish a self-serve public developer API - integrations are handled through a customer-facing Integration Panel (SSO plus documented web services) provisioned per tenant, and the separate Diligent Developer Portal (developer.diligent.com) exposes APIs for the Diligent One GRC platform rather than for BoardEffect's board-management data. Pricing is contact-sales only (annual subscription, tiered by users).
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/boardeffect/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/boardeffect/refs/heads/main/apis.yml)
+**Areas:** Board Management · Board Portal · Governance · Meetings · Non-Profit · Diligent
 
-## API Access Model (Honest Status)
+## BoardEffect on APIs.io
 
-BoardEffect **does not publish a self-serve public developer API.** This entry is maintained as an honest company stub, not a full API catalog.
+Everything profiled for BoardEffect is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/boardeffect/](https://apis.io/providers/boardeffect/)** — or go straight to one of the APIs or properties below.
 
-- **No public API reference.** There is no published API reference, base URL, authentication guide, or machine-readable OpenAPI/AsyncAPI definition for BoardEffect itself.
-- **Integrations are customer/partner-gated.** BoardEffect connects to enterprise systems (HRIS, ERP, CRM, and 100+ third-party data providers) and enables Single Sign-On through the Diligent One / BoardEffect **Integration Panel** — "flexible, documented web services and APIs" provisioned per tenant rather than openly documented.
-- **The Diligent Developer Portal is a different surface.** Diligent runs a developer portal at [developer.diligent.com](https://developer.diligent.com/), but the APIs documented there (for example the Entities Reports API and the Workflow API) target the **Diligent One GRC platform**, not BoardEffect's meetings, documents, members, or committees data.
-- **Ownership.** BoardEffect is a Diligent brand. Diligent's flagship board portal is Diligent Boards; BoardEffect is the offering positioned for nonprofit, healthcare, higher-education, and credit-union boards.
+### Published properties
 
-Because no public API is documented, no `openapi/`, `plans/`, `rate-limits/`, `finops/`, or `collections/` artifacts were created — nothing was fabricated. If Diligent later exposes a documented BoardEffect API, this entry can be upgraded from stub to a full catalog.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Platform Modules (marketing-documented, not API-backed)
+#### Security (2)
 
-- **Meetings & Agendas** — scheduling, agenda building, video conferencing, AI meeting preparation, automated minutes.
-- **Documents** — customizable digital board books, integrated documents, centralized secure libraries.
-- **Workrooms** — virtual rooms for confidential discussions and document sharing with customizable workflows.
-- **Members & Committees** — board and committee structure, directories, and access.
-- **Surveys & Voting** — configurable surveys and polls to collect feedback and conduct votes.
-- **Remote Access** — mobile app for anytime access to materials and minutes.
+Authentication, trust centre, and vulnerability disclosure.
 
-## Pricing
+- [Boardeffect Domain Security](https://apis.io/security/boardeffect/boardeffect-domain-security/)
+- [Boardeffect Trust Center](https://apis.io/security/boardeffect/boardeffect-trust-center/)
 
-Contact-sales only. BoardEffect is licensed as an annual subscription, priced in tiers by number of users; there is no published rate card and no free tier. The only public call to action is "Request a Demo." See [https://www.boardeffect.com/pricing/](https://www.boardeffect.com/pricing/).
+## Where to find this API
 
-## Tags
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- Board Management
-- Board Portal
-- Governance
-- Meetings
-- Nonprofit
-- Diligent
-
-## Timestamps
-
-- **Created:** 2026-07-05
-- **Modified:** 2026-07-05
-
-## Common Properties
-
-- [LinkedIn](https://www.linkedin.com/company/boardeffect)
 - [Website](https://www.boardeffect.com)
-- [Website (Diligent product page)](https://www.diligent.com/products/boardeffect)
-- [Documentation (BoardEffect help)](https://help.diligentoneplatform.com/helpdocs/d1p/en-us/Content/boardeffect/board_management_with_boardeffect.htm)
-- [Documentation (Diligent Developer Portal — Diligent One GRC APIs, not BoardEffect)](https://developer.diligent.com/)
-- [Plans (contact-sales pricing)](https://www.boardeffect.com/pricing/)
+- [Documentation](https://help.diligentoneplatform.com/helpdocs/d1p/en-us/Content/boardeffect/board_management_with_boardeffect.htm)
+- [Blog](https://www.boardeffect.com/blog/)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 8.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 10.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/boardeffect/](https://apis.io/providers/boardeffect/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for BoardEffect: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/boardeffect/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
